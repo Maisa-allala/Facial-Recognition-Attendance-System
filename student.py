@@ -24,28 +24,28 @@ class Student:
         self.face_classifier = cv2.CascadeClassifier(self.cascade_path)
 
         # First image
-        img1 = Image.open(r"C:\Users\maiss\OneDrive\Desktop\Facial Recognition Attendance System\images\2.jpeg")
+        img1 = Image.open(r"images\2.jpeg")
         img1 = img1.resize((500, 130), Image.LANCZOS)
         self.photoimg1 = ImageTk.PhotoImage(img1)
         f_lbl = Label(self.root, image=self.photoimg1)
         f_lbl.place(x=0, y=0, width=500, height=130)
 
         # Second image
-        img2 = Image.open(r"C:\Users\maiss\OneDrive\Desktop\Facial Recognition Attendance System\images\1.jpg")
+        img2 = Image.open(r"images\1.jpg")
         img2 = img2.resize((500, 130), Image.LANCZOS)
         self.photoimg2 = ImageTk.PhotoImage(img2)
         f_lbl = Label(self.root, image=self.photoimg2)
         f_lbl.place(x=500, y=0, width=500, height=130)
 
         # Third image
-        img3 = Image.open(r"C:\Users\maiss\OneDrive\Desktop\Facial Recognition Attendance System\images\3.jpg")
+        img3 = Image.open(r"images\3.jpg")
         img3 = img3.resize((560, 130), Image.LANCZOS)
         self.photoimg3 = ImageTk.PhotoImage(img3)
         f_lbl = Label(self.root, image=self.photoimg3)
         f_lbl.place(x=1000, y=0, width=560, height=130)
 
         # Background image
-        img4 = Image.open(r"C:\Users\maiss\OneDrive\Desktop\Facial Recognition Attendance System\images\3.jpg")
+        img4 = Image.open(r"images\3.jpg")
         img4 = img4.resize((1530, 710), Image.LANCZOS)
         self.photoimg4 = ImageTk.PhotoImage(img4)
 
@@ -62,7 +62,7 @@ class Student:
         Left_Frame = LabelFrame(main_frame, bd=2, bg="white", relief=RIDGE, text="Student Details", font=("times new roman", 12, "bold"))
         Left_Frame.place(x=10, y=10, width=730, height=580)
 
-        img_left = Image.open(r"C:\Users\maiss\OneDrive\Desktop\Facial Recognition Attendance System\images\3.jpg")
+        img_left = Image.open(r"images\3.jpg")
         img_left = img_left.resize((720, 130), Image.LANCZOS)
         self.photoimg_left = ImageTk.PhotoImage(img_left)
         f_lbl = Label(Left_Frame, image=self.photoimg_left)
